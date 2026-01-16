@@ -36,6 +36,7 @@ coding!
 
 - Yangchen Dema(Scrum Master): [GitHub](https://github.com/ghaccountname) / [LinkedIn](https://linkedin.com/in/liaccountname)
 - Kevin Llanos (Software Engineer): [GitHub](https://github.com/KevinLlano) / [LinkedIn](https://linkedin.com/in/kevinllanos7)
+- Shruthi Reddy (Software Engineer) : [GitHub](https://github.com/shrusred) / [LinkedIn](https://www.linkedin.com/in/ssreddy/)
 
    ...
 - Teammate name #n: [GitHub](https://github.com/ghaccountname) / [LinkedIn](https://linkedin.com/in/liaccountname)
