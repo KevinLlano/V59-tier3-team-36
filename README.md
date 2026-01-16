@@ -35,7 +35,7 @@ your repo access and to practice PR'ing with your team *before* you start
 coding!
 
 - Yangchen Dema(Scrum Master): [GitHub](https://github.com/ghaccountname) / [LinkedIn](https://linkedin.com/in/liaccountname)
-- Teammate name #2: [GitHub](https://github.com/KevinLlano) / [LinkedIn](https://linkedin.com/in/kevinllanos7)
+- Kevin Llanos (Software Engineer): [GitHub](https://github.com/KevinLlano) / [LinkedIn](https://linkedin.com/in/kevinllanos7)
 
    ...
 - Teammate name #n: [GitHub](https://github.com/ghaccountname) / [LinkedIn](https://linkedin.com/in/liaccountname)
