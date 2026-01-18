@@ -41,3 +41,54 @@ you like the best.
 |   |	- FE | | | | | | |
 | 8	| ... | | | | | | |
 | n | ... | | | | | | |
+
+
++## Resolve Decisions- These are the decisions made by the team 
+
+1) Meetings/ceremonies will be held using Google meet
+   
+3) Kevin,Greg, Shruthi and Yangchen- collobrate to create Initial Product backlog
+   
+5) Daily standup(live)-Monday-Thursday-1pm ESt??
+   
+7) Chingu Project- Interview Questions Generator App
+   
+9) Tackstack:
+    
+        -frontend-React Javascript, Css, Tailwind
+   
+        -backend-Express Node, React, Google Gemini LLM
+   
+11) Task Tracking Tools- jira
+    
+13) Hosting Platform(s):
+    
+       -frontend- Netlify, Vercel
+    
+       -backend - Firebase, Render
+    
+15) 2 Environment:
+    
+          -Dev/Test
+    
+          -Prod
+    
+17) Defination of Done(DOD):
+    
+          -Unit tested
+    
+          -Merged to dev brunch and integration test
+    
+          -Accepted by PO
+    
+19) Defination of Ready(DOR):
+    
+          -Clear user story
+    
+          -task created( if necessary)
+    
+          -Acceptance Criteria
+    
+          -Points assigned
+    
+21) No UI/UX-Greg will create the wireframe
