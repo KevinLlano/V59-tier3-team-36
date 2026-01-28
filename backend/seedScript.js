@@ -18,7 +18,7 @@ const importData = async () => {
 
         flashcards.forEach((item) => {
             const { role, focus, flashcards: questions } = item;
-            rolesData.push({ name: role, focus });
+            rolesData.push({ name: role, focus, questionCount: questions.length });
 
             questions.forEach((q) => {
                 questionsData.push({

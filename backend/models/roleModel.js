@@ -3,6 +3,7 @@ import mongoose from "mongoose";
 const roleSchema = new mongoose.Schema({
     name: { type: String, required: true, unique: true },
     focus: { type: String, required: true },
+    questionCount: { type: Number, required: true },
 }, { timestamps: true });
 
 const Role = mongoose.model("Role", roleSchema);
