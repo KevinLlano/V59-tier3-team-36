@@ -1,10 +1,14 @@
 # Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app) and [TailwindCss] (https://v3.tailwindcss.com/).
 
 ## Available Scripts
 
 In the project directory, you can run:
+
+### `npm install`
+
+Runs and install all required dependecies for the app.
 
 ### `npm start`
 
