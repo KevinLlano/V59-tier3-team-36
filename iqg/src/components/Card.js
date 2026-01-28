@@ -1,6 +1,12 @@
 import React from 'react'
 
-function Card({ title, description, icon, button }) {
+function Card({ title, description, icon, buttonText, onButtonClick, buttonVariant = 'primary' }) {
+
+    const buttonStyles = {
+        primary:
+            'bg-green-600 text-white hover:bg-green-700'
+    }
+
   return (
     <div className={'bg-white rounded-xl shadow-sm border p-6 hover:shadow-md transition'} >
         {icon && (
@@ -18,7 +24,14 @@ function Card({ title, description, icon, button }) {
                 {description}
             </p>
         )}
-        
+        {buttonText && (
+            <button
+                onClick={onButtonClick}
+                className={`mt-4 inline-flex items-center justify-center px-4 py-2 rounded-md text-sm font-medium transition ${buttonStyles[buttonVariant]}`}
+            >
+                {buttonText}
+            </button>
+        )}
     </div>
   )
 }
