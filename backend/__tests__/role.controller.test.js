@@ -1,18 +1,13 @@
 import { it, jest } from '@jest/globals';
 
 // Mock the Role model
-jest.unstable_mockModule(
-    '../services/RoleService.js',
-    () => ({
-        default: {
-            getRoles: jest.fn(),
-        },
-    })
-);
+jest.unstable_mockModule('../services/RoleService.js', () => ({
+    findRoles: jest.fn(),
+}));
 
 // Import the controller AFTER mocking
-const { default: roleController } = await import('../controllers/RoleController.js');
-const { default: roleService } = await import('../services/RoleService.js');
+const { getRoles } = await import('../controllers/RoleController.js');
+const { findRoles } = await import('../services/RoleService.js');
 
 describe('roles controller', () => {
     it('should return all roles with status 200 when successful', async () => {
@@ -36,7 +31,7 @@ describe('roles controller', () => {
             }
         ];
 
-        roleService.getRoles.mockResolvedValue(mockRoles);
+        findRoles.mockResolvedValue(mockRoles);
 
         const req = {};
         const res = {
@@ -44,21 +39,21 @@ describe('roles controller', () => {
             json: jest.fn(),
         };
 
-        await roleController.getRoles(req, res);
+        await getRoles(req, res);
 
         expect(res.status).toHaveBeenCalledWith(200);
         expect(res.json).toHaveBeenCalledWith(mockRoles);
     });
 
     it('should return status 500 when service throws an error', async () => {
-        roleService.getRoles.mockRejectedValue(new Error('Service error'));
+        findRoles.mockRejectedValue(new Error('Service error'));
 
         const req = {};
         const res = {
             status: jest.fn().mockReturnThis(),
             json: jest.fn(),
         };
-        await roleController.getRoles(req, res);
+        await getRoles(req, res);
 
         expect(res.status).toHaveBeenCalledWith(500);
         expect(res.json).toHaveBeenCalledWith({ message: "Server Error" });

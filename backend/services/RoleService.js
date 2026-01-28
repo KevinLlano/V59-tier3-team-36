@@ -1,6 +1,6 @@
-import Role from "../models/roleModel.js";
+import Role from "../models/RoleModel.js";
 
-const getRoles = async () => {
+export const findRoles = async () => {
     try {
         const roles = await Role.find({});
         return roles;
@@ -9,5 +9,3 @@ const getRoles = async () => {
         throw error;
     }
 }
-
-export default { getRoles };
