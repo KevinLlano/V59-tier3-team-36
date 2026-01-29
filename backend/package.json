@@ -1,0 +1,25 @@
+{
+  "name": "backend",
+  "version": "1.0.0",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "nodemon index.js",
+    "test": "set NODE_OPTIONS=--experimental-vm-modules && jest",
+    "data:import": "node seedScript.js",
+    "data:destroy": "node seedScript.js -d"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "dotenv": "^17.2.3",
+    "express": "^5.2.1",
+    "mongoose": "^9.1.5",
+    "nodemon": "^3.1.11"
+  },
+  "devDependencies": {
+    "jest": "^30.2.0"
+  }
+}
