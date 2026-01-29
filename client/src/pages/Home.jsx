@@ -12,7 +12,7 @@ function Home() {
       <div className='grid gap-6 md:grid-cols-3' >
         <Card
           icon='icon'
-          title='Mutiple Questions'
+          title='Multiple Questions'
           description='Practice questions tailored for Scrum Masters, Product Owners, Developers, and Designers' 
         />
         <Card
