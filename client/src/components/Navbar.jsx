@@ -10,7 +10,7 @@ export default function Navbar() {
         : "hover:text-green-600"
 
   return (
-    <nav className="bg-white border-m shadow-md">
+    <nav className="bg-white border-b shadow-md">
       <div className="max-w-7xl mx-auto px-4">
         <div className="flex justify-between items-center h-16">
           
