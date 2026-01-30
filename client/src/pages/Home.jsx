@@ -1,5 +1,6 @@
+import Button from '../components/Button'
 import Card from '../components/Card'
-import { CheckCircle } from 'lucide-react'
+import { ArrowRight, CheckCircle } from 'lucide-react'
 
 function Home() {
   return (
@@ -26,9 +27,10 @@ function Home() {
           title='Track Progress'
           description='View detailed summaries and statistics after completing each session' 
         />
-
-        <button>Get Started</button>
       </div>
+        <div className='flex items-center justify-center' >
+          <Button  buttonText='Get Started' icon={<ArrowRight />} onButtonClick={() => console.log('get started')} className='text-center' />
+        </div>
 
       <div>
         <h3>what you'll get:</h3>
