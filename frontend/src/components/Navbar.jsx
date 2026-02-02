@@ -1,16 +1,18 @@
-import { useState } from "react";
+import { useState, useMemo } from "react";
 import { FaHome, FaUser } from "react-icons/fa";
 import { NavLink } from "react-router-dom";
 
 export default function Navbar() {
   const [open, setOpen] = useState(false);
-  const today = new Date();
-  const dateString = today.toLocaleDateString(undefined, {
-    weekday: 'long',
-    month: 'long',
-    day: '2-digit',
-    year: 'numeric',
-  });
+  const dateString = useMemo(() => {
+    const today = new Date();
+    return today.toLocaleDateString(undefined, {
+      weekday: 'long',
+      month: 'long',
+      day: '2-digit',
+      year: 'numeric',
+    });
+  }, []);
 
   const linkStyle = ({ isActive }) =>
     `px-3 py-1 rounded-md transition-colors duration-200 font-semibold ${
@@ -25,13 +27,13 @@ export default function Navbar() {
         <div className="flex flex-col md:flex-row md:justify-between md:items-center h-auto md:h-16 py-2 md:py-0">
           <div>
             <div className="text-xl font-bold text-black ">AI Interview Question Generator</div>
-            <div className="text-xs text-black mt-1 md:mt-0 ">{dateString}</div>
+            <div className="text-xs text-black mt-1 md:mt-0">{dateString}</div>
           </div>
 
           {/* Desktop Menu */}
           <div className="hidden md:flex space-x-6 mt-2 md:mt-0">
             <NavLink to="/" className={linkStyle}> <FaHome className="inline mr-2 -mt-1" />
-              Home 
+              Home
             </NavLink>
             <NavLink to="/roles" className={linkStyle}> <FaUser className="inline mr-2 -mt-1" />
               Roles
