@@ -16,7 +16,7 @@ export default function Navbar() {
     `px-3 py-1 rounded-md transition-colors duration-200 font-semibold ${
       isActive
         ? "bg-green-600 text-white border border-green-600"
-        : "bg-green-600 text-white border border-green-600 hover:bg-green-700"
+        : "bg-white text-black border-green-600 hover:bg-green-100"
     }`;
 
   return (
