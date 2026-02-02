@@ -31,7 +31,7 @@ export default function Navbar() {
           {/* Desktop Menu */}
           <div className="hidden md:flex space-x-6 mt-2 md:mt-0">
             <NavLink to="/" className={linkStyle}> <FaHome className="inline mr-2 -mt-1" />
-              Home 
+              Home
             </NavLink>
             <NavLink to="/roles" className={linkStyle}> <FaUser className="inline mr-2 -mt-1" />
               Roles
