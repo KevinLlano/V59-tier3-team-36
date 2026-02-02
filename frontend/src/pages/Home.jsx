@@ -1,8 +1,10 @@
 import Button from '../components/Button'
 import Card from '../components/Card'
 import { ArrowRight, CheckCircle } from 'lucide-react'
+import { useNavigate } from 'react-router-dom';
 
 function Home() {
+  const navigate = useNavigate();
   return (
     <div>
       <div>
@@ -29,7 +31,7 @@ function Home() {
         />
       </div>
         <div className='flex items-center justify-center' >
-          <Button  buttonText='Get Started' icon={<ArrowRight />} onButtonClick={() => console.log('get started')} className='text-center' />
+          <Button  buttonText='Get Started' icon={<ArrowRight />} onButtonClick={() => navigate('/roles')} className='text-center' />
         </div>
 
       <div className='bg-emerald-50 rounded-lg p-6 mt-8 border border-emerald-100'>
