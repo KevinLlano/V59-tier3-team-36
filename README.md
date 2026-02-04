@@ -40,6 +40,7 @@ coding!
 - Banto Klara (Developer): [GitHub](https://github.com/bantoklara) / [LinkedIn](https://www.linkedin.com/in/banto-laczi-klara/)
 - Greg Minezzi: [GitHub](https://github.com/minezzig) / [LinkedIn](https://linkedin.com/in/gregminezzi)
 - Stanley Eze (Software Engineer) : [GitHub](https://github.com/Blackmile) / [LinkedIn](https://www.linkedin.com/in/stanleyeze01/)
+- Chinedu Olekah (Product Owner): [GitHub](https://github.com/kenako1) / [LinkedIn](https://www.linkedin.com/in/chinedu-olekah/)
 
    ...
 - Teammate name #n: [GitHub](https://github.com/ghaccountname) / [LinkedIn](https://linkedin.com/in/liaccountname)
