@@ -6,7 +6,7 @@
   "scripts": {
     "start": "node index.js",
     "dev": "nodemon index.js",
-    "test": "set NODE_OPTIONS=--experimental-vm-modules && jest",
+    "test": "cross-env NODE_OPTIONS=--experimental-vm-modules jest",
     "data:import": "node seedScript.js",
     "data:destroy": "node seedScript.js -d"
   },
@@ -14,12 +14,14 @@
   "license": "ISC",
   "description": "",
   "dependencies": {
+    "cors": "^2.8.6",
     "dotenv": "^17.2.3",
     "express": "^5.2.1",
     "mongoose": "^9.1.5",
     "nodemon": "^3.1.11"
   },
   "devDependencies": {
+    "cross-env": "^10.1.0",
     "jest": "^30.2.0"
   }
 }
